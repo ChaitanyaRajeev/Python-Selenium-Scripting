@@ -8,10 +8,10 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
 
 chrome_options = webdriver.ChromeOptions()
-prefs = {'download.default_directory' : 'D://dev//elab'}
+prefs = {'download.default_directory' : 'D://dev//elab'} #Set Directory 
 chrome_options.add_experimental_option('prefs', prefs)
 driver = webdriver.Chrome(chrome_options=chrome_options)
-driver = webdriver.Chrome(executable_path="D:\\dev\\chromedriver.exe")
+driver = webdriver.Chrome(executable_path="D:\\dev\\chromedriver.exe") #Set your Chromedriver path
 driver.get("http://care.srmuniv.ac.in/ktrcseada/")
 driver.find_element_by_id("username").send_keys("REG NO") #Type your Reg no " 
 driver.find_element_by_id("password").send_keys("Password") #Type your password
